@@ -54,7 +54,19 @@ async def on_message(message):
     # Help
     if '!todo help' in message.content.lower():
         await message.channel.send(
-            'Available Commands: \n !todo create (name) \n\t-Creates a To Do List. \n !todo add (name) (item) \n\t-Adds item to a specific To Do List \n !todo check (name) \n\t-Checks a specific To Do List \n!todo delete (name) (number) \n\t-Deletes a specific item in the To Do List \n!todo remove (name) \n\t-Removes a specific list \n!todo all \n\t-Checks all the Todo List'
+            'Available Commands: ' + 
+            '\n !todo create (name) ' +
+            '\n\t-Creates a To Do List. ' +
+            '\n !todo add (name) (item) ' +
+            '\n\t-Adds item to a specific To Do List ' +
+            '\n !todo check (name) ' +
+            '\n\t-Checks a specific To Do List ' +
+            '\n!todo delete (name) (number) ' +
+            '\n\t-Deletes a specific item in the To Do List ' +
+            '\n!todo remove (name) ' +
+            '\n\t-Removes a specific list ' +
+            '\n!todo all ' +
+            '\n\t-Checks all the Todo List'
                                    )
     # Creates a List
     elif '!todo create' in message.content.lower():
